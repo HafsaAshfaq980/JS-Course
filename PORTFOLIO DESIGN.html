@@ -1,268 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>My Portfolio</title>
-    <style type="text/tailwindcss">
-        /* @theme {
+  <style type="text/tailwindcss">
+    /* @theme {
             --color-clifford: #da373d;
         } */
     </style>
-        
+
 </head>
+
 <body>
-    
+
   <div class="min-h-screen w-screen bg-purple-100 flex flex-col">
-<!-- Navbar -->
+    <!-- Navbar -->
     <nav class="bg-gradient-to-r from-purple-500 to-purple-900 p-4 text-white flex justify-between items-center">
       <div class="text-2xl font-bold">My Portfolio</div>
       <div class="space-x-4 pr-5">
-        <a href="portfoliooo.html" class="hover:underline">Home</a>
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="portfoliooo.html" class="hover:underline hover:text-purple-400">Home</a>
+        <a href="#about" class="hover:underline hover:text-purple-400">About</a>
+        <a href="#services" class="hover:underline hover:text-purple-400">Services</a>
+        <a href="#contact" class="hover:underline hover:text-purple-400">Contact</a>
       </div>
     </nav>
 
-<!-- Header Section -->
-    <header class="bg-gradient-to-r from-black to-purple-900 flex flex-col-reverse md:flex-row justify-center items-center text-white text-center md:text-left p-6 md:p-12 gap-8 flex-grow">
-      
+    <!-- Header Section -->
+    <header
+      class="bg-gradient-to-r from-black to-purple-900 flex flex-col-reverse md:flex-row justify-center items-center text-white text-center md:text-left p-6 md:p-12 gap-8 flex-grow">
+
       <!-- Left Content -->
       <div class="w-full md:w-1/2">
-        <h2 class="text-3xl md:text-5xl font-bold mb-4">
+        <h2 class="text-3xl md:text-6xl font-bold mb-4 animate__animated animate__flipInX animate__delay-1s">
           Hi, I'm <span class="text-purple-600">Hafsah.</span>
         </h2>
         <p class="mb-6 text-base md:text-lg text-gray-400">
           A passionate Web Designer & Developer creating modern<br class="hidden md:block">
           and user-friendly websites.
         </p>
-        <a href="#projects" class="bg-purple-600 text-white px-6 py-3 rounded-lg shadow hover:bg-transparent hover:border-2 hover:border-purple-600 hover:text-purple-600 transition">
+        <a href="#projects"
+          class="bg-purple-600 text-white px-6 py-3 rounded-lg shadow hover:bg-transparent hover:border-2 hover:border-purple-600 hover:text-purple-600 transition">
           View My Work
         </a>
       </div>
 
       <!-- Right Image -->
-      <div class="w-full md:w-1/2 flex justify-center">
-        <img src="images/port.png" alt="Portfolio Image" class="w-64 h-64 md:w-96 md:h-96 object-cover rounded-lg shadow-lg"/>
+      <div class="w-full md:w-1/2 flex justify-center animate__animated animate__slideInRight">
+        <img src="images/port.png" alt="Portfolio Image"
+          class="w-64 h-64 md:w-96 md:h-96 object-cover rounded-lg shadow-lg" />
       </div>
     </header>
 
-    <div id="about" class ="text-center mt-5 p-6 md:p-12">
-       <h2 class="text-3xl md:text-5xl font-bold mb-4">
-          I love to create beautiful & <br> efficient 
-         <span class="text-purple-600">Websites</span>
-        </h2>
-        <p class="text-lg md:text-xl text-gray-600">Crafting visually stunning and highly functional websites that leave a lasting impression.</p>
-       
+    <div id="about" class="text-center mt-5 p-6 md:p-12">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 animate__animated animate__zoomIn animate__delay-1s">
+        I love to create beautiful & <br> efficient
+        <span class="text-purple-600">Websites</span>
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600">Crafting visually stunning and highly functional websites that leave a
+        lasting impression.</p>
 
-<!-- About section -->
-          <section  class="px-6 pt-12 max-w-7xl mx-auto ">
 
-          <div class="flex flex-col md:flex-row gap-4">
-      
-    <!-- Left Section -->
-      <div class="bg-gray-100 rounded-2xl p-8 flex-1 flex flex-col justify-center">
-        <h2 class="text-6xl font-extrabold text-purple-500">2+</h2>
-        <p class="text-3xl font-bold text-gray-900 leading-snug mt-2">Years of Experience</p>
-        <p class="mt-4 text-gray-600">
-          Passionate Web Developer with 2+ years of professional experience. Skilled in 
-          modern web technologies and WordPress, delivering creative and responsive solutions 
-          through real-world projects and client-focused development.
-        </p>
-      </div>
+      <!-- About section -->
+      <section class="px-6 pt-12 max-w-7xl mx-auto ">
 
-      <!-- Right Section -->
-      <div class="flex-1 flex flex-wrap gap-4 justify-center">
-        <div class="bg-gray-50 rounded-xl shadow-sm border border-purple-400 p-6 text-center flex-1 min-w-[140px]">
-          <h3 class="text-2xl font-bold">3+</h3>
-          <p class="text-gray-600">Websites Completed</p>
+        <div class="flex flex-col md:flex-row gap-4">
+
+          <!-- Left Section -->
+          <div class="bg-purple-50 rounded-2xl p-8 flex-1 flex flex-col justify-center">
+            <h2 class="text-6xl font-extrabold text-purple-500">2+</h2>
+            <p class="text-3xl font-bold text-gray-900 leading-snug mt-2">Years of Experience</p>
+            <p class="mt-4 text-gray-600">
+              Passionate Web Developer with 2+ years of professional experience. Skilled in
+              modern web technologies and WordPress, delivering creative and responsive solutions
+              through real-world projects and client-focused development.
+            </p>
+          </div>
+
+          <!-- Right Section -->
+          <div class="flex-1 flex flex-wrap gap-4 justify-center">
+            <div
+              class="bg-purple-50 hover:bg-purple-500 hover:text-white rounded-xl shadow-sm border border-purple-400 p-6 text-center flex-1 min-w-[140px]">
+              <h3 class="text-2xl font-bold">3+</h3>
+              <p class="text-gray-600 hover:text-white mt-2">Websites Completed</p>
+            </div>
+
+            <div
+              class="bg-purple-50 hover:bg-purple-500 hover:text-white rounded-xl shadow-sm border border-purple-400 p-6 text-center flex-1 min-w-[140px]">
+              <h3 class="text-2xl font-bold">1</h3>
+              <p class="text-gray-600 hover:text-white mt-2">Final Year Project</p>
+            </div>
+
+            <div
+              class="bg-purple-50 hover:bg-purple-500 hover:text-white rounded-xl shadow-sm border border-purple-400 p-6 text-center flex-1 min-w-[140px]">
+              <h3 class="text-2xl font-bold">15+</h3>
+              <p class="text-gray-600 hover:text-white mt-2">Mini Web Based Projects </p>
+            </div>
+
+            <div
+              class="bg-purple-50 hover:bg-purple-500 hover:text-white rounded-xl shadow-sm border border-purple-400 p-6 text-center flex-1 min-w-[140px]">
+              <h3 class="text-2xl font-bold">3+ Years</h3>
+              <p class="text-gray-600 hover:text-white mt-2">WordPress Experience With Different Editors, Customized Web
+                Pages Design.</p>
+            </div>
+          </div>
+
         </div>
+      </section>
+    </div>
 
-        <div class="bg-gray-50 rounded-xl shadow-sm border border-purple-400 p-6 text-center flex-1 min-w-[140px]">
-          <h3 class="text-2xl font-bold">1</h3>
-          <p class="text-gray-600">Final Year Project</p>
-        </div>
+    <!-- Services Section -->
+    <section id="services" class="px-6 py-6 mx-auto">
 
-        <div class="bg-gray-50 rounded-xl shadow-sm border border-purple-400 p-6 text-center flex-1 min-w-[140px]">
-          <h3 class="text-2xl font-bold">15+</h3>
-          <p class="text-gray-600">Mini Projects</p>
-        </div>
-
-        <div class="bg-gray-50 rounded-xl shadow-sm border border-purple-400 p-6 text-center flex-1 min-w-[140px]">
-          <h3 class="text-2xl font-bold">3+ Years</h3>
-          <p class="text-gray-600">WordPress Experience</p>
-        </div>
-        </div>
-
-       </div>
-     </section>
-     </div>
-
-<!-- Services Section -->
-   <section id="services" class="px-6 py-12 mx-auto">
-
-    <div class ="text-center p-6 md:p-12">
-       <h2 class="text-3xl md:text-5xl font-bold mb-4">
+      <div class="text-center p-6 md:p-12">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4 animate__animated animate__zoomIn animate__delay-1s">
           <span class="text-purple-600">SERVICES</span> I OFFER
         </h2>
-        <p class="text-lg md:text-xl text-gray-600">Our Services Range From Initial Design To Deployment Anywhere Anytime</p>
-    </div>
-
-     <div class="flex flex-col md:flex-row items-center p-10 ">
-      <!-- Text -->
-      <div class="flex-1">
-        <h3 class="text-purple-600 font-bold text-2xl flex items-center ">
-           WEB DESIGN
-        </h3>
-        <p class="text-gray-600 mt-3">
-          I create modern, clean, and user-friendly web designs that provide a 
-          great user experience and professional look.I create modern, clean, and user-friendly web designs that provide a 
-          great user experience and professional look.
-        </p>
-        <button class="mt-5 inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white hover:bg-purple-700">
-          Learn more 
-        </button>
+        <p class="text-lg md:text-xl text-gray-600">Our Services Range From Initial Design To Deployment Anywhere
+          Anytime</p>
       </div>
-      <!-- Image -->
-      <div class="flex-1 flex justify-center">
-        <img src="images/webdesign.png" alt="webdesign" class="max-w-full mt-4">
-      </div>
-    </div>
 
-    <!-- Service 2: Web Development -->
-    <div class="flex flex-col md:flex-row-reverse items-center p-10">
-      <!-- Text -->
-      <div class="flex-1 mr-5">
-        <h3 class="text-purple-600 font-bold text-2xl flex items-center gap-2">
-        WORDPRESS DEVELOPMENT
-        </h3>
-        <p class="text-gray-600 mt-3">
-            I develop custom WordPress themes and plugins to create dynamic, 
+      <div class="flex flex-col md:flex-row items-center p-10 ">
+        <!-- Text -->
+        <div class="flex-1">
+          <h3 class="text-purple-600 font-bold text-2xl flex items-center ">
+            WEB DESIGN
+          </h3>
+          <p class="text-gray-600 mt-3">
+            I create modern, clean, and user-friendly web designs that provide a
+            great user experience and professional look.I create modern, clean, and user-friendly web designs that
+            provide a
+            great user experience and professional look.
+          </p>
+          <button
+            class="mt-5 inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white hover:bg-transparent hover:border-2 hover:border-purple-500 hover:text-purple-500">
+            Learn more
+          </button>
+        </div>
+        <!-- Image -->
+        <div class="flex-1 flex justify-center">
+          <img src="images/webdesign.png" alt="webdesign" class="max-w-full mt-4">
+        </div>
+      </div>
+
+      <!-- Service 2: Web Development -->
+      <div class="flex flex-col md:flex-row-reverse items-center p-10">
+        <!-- Text -->
+        <div class="flex-1 mr-5">
+          <h3 class="text-purple-600 font-bold text-2xl flex items-center gap-2">
+            WORDPRESS DEVELOPMENT
+          </h3>
+          <p class="text-gray-600 mt-3">
+            I develop custom WordPress themes and plugins to create dynamic,
             responsive, and SEO-friendly websites tailored to your needs.
             I develop custom WordPress themes and plugins to create dynamic,
             responsive, and SEO-friendly websites tailored to your needs.
-           
-        </p>
-        <button class="mt-5 inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white hover:bg-purple-700">
-          Learn more 
-        </button>
-      </div>
-      <!-- Image -->
-      <div class="flex-1 flex justify-center">
-        <img src="images/Adobe Express - file (5).png" alt="Web Development" class="max-w-full">
-      </div>
-    </div>
 
-    <div class="flex flex-col md:flex-row items-center p-10 ">
-      <!-- Text -->
-      <div class="flex-1">
-        <h3 class="text-purple-600 font-bold text-2xl flex items-center ">
-         CUSTOM  WEB DEVELOPMENT
-        </h3>
-        <p class="text-gray-600 mt-3">
-            I build custom web applications using modern technologies like HTML, CSS, JavaScript, and frameworks to deliver tailored solutions.
-            I build custom web applications using modern technologies like HTML, CSS, JavaScript, and frameworks to deliver tailored solutions.
-
-        </p>
-        <button class="mt-5 inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white Hover:bg-purple-700">
-          Learn more 
-        </button>
-      </div>
-      <!-- Image -->
-      <div class="flex-1 flex justify-center">
-        <img src="images/Adobe Express - file (6).png" alt="web development custom" class="max-w-full mt-4">
-      </div>
-    </div>
-   </section>
-     
-<!-- CONTACT SECTION -->
-<div id="contact" class ="text-center p-6 md:p-12">
-       <h2 class="text-3xl md:text-5xl font-bold mb-4">
-         STAY IN <span class="text-purple-600">CONTACT</span> 
-        </h2>
-        <p class="text-lg md:text-xl text-gray-600">Feel free to reach out for collaborations or just a friendly hello!</p>
-    </div>
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
-      
-      <!-- Left Side -->
-      <div class="flex-1 bg-gradient-to-r from-purple-500 to-purple-700 text-white p-10">
-        <h3 class="text-3xl font-bold mb-4">100% Satisfaction Guaranteed</h3>
-        <p class="mb-6">
-            I'm committed to delivering high-quality work that meets your expectations. 
-            Your satisfaction is my top priority, and I strive to exceed it with every project.
-        </p>
-        <h4 class="text-xl font-semibold mb-3">What will be the next step?</h4>
-        <ul class="space-y-2">
-          <li class="flex items-center gap-2">
-            <span class="text-green-300">✔</span> We’ll prepare the proposal.
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-300">✔</span> We’ll discuss it together.
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-green-300">✔</span> Let’s start the discussion.
-          </li>
-        </ul>
-      </div>
-
-      <!-- Right Side (Form) -->
-      <div class="flex-1 p-10">
-        <h3 class="text-2xl font-bold text-purple-600 mb-6">Start Your Project</h3>
-        <form class="space-y-4">
-          <div class="flex gap-4">
-            <input type="text" placeholder="First Name" class="w-1/2 border rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-purple-500">
-            <input type="text" placeholder="Last Name" class="w-1/2 border rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-purple-500">
-          </div>
-          <input type="email" placeholder="Email Address" class="w-full border rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-purple-500">
-          <textarea placeholder="Message" rows="5" class="w-full border rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
-          <button class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 shadow-md flex items-center justify-center gap-2">
-            Submit 
+          </p>
+          <button
+            class="mt-5 inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white hover:bg-transparent hover:border-2 hover:border-purple-500 hover:text-purple-500">
+            Learn more
           </button>
-        </form>
+        </div>
+        <!-- Image -->
+        <div class="flex-1 flex justify-center">
+          <img src="images/Adobe Express - file (5).png" alt="Web Development" class="max-w-full">
+        </div>
       </div>
-    </div>
-  </div>
 
-<!-- FOOTER START -->
-<footer class="bg-gradient-to-r from-purple-700 to-black bg-cover bg-center relative mt-12 py-12" >
-  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 ">
+      <div class="flex flex-col md:flex-row items-center p-10 ">
+        <!-- Text -->
+        <div class="flex-1">
+          <h3 class="text-purple-600 font-bold text-2xl flex items-center ">
+            CUSTOM WEB DEVELOPMENT
+          </h3>
+          <p class="text-gray-600 mt-3">
+            I build custom web applications using modern technologies like HTML, CSS, JavaScript, and frameworks to
+            deliver tailored solutions.
+            I build custom web applications using modern technologies like HTML, CSS, JavaScript, and frameworks to
+            deliver tailored solutions.
 
-    <!-- About -->
-    <div>
-      <h4 class="text-xl font-bold text-white mb-4">MyPortfolio</h4>
-      <p class="text-white">
-        A passionate Web Designer & Developer creating<br> modern, responsive, and user-friendly websites.
+          </p>
+          <button
+            class="mt-5 inline-flex items-center gap-2 px-4 py-2 bg-purple-600 text-white hover:bg-transparent hover:border-2 hover:border-purple-500 hover:text-purple-500">
+            Learn more
+          </button>
+        </div>
+        <!-- Image -->
+        <div class="flex-1 flex justify-center">
+          <img src="images/Adobe Express - file (6).png" alt="web development custom" class="max-w-full mt-4">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects Delivered Section -->
+    <section class="px-6 py-6 mx-auto mb-8">
+      <div class="text-center p-6 md:p-12">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4 animate__animated animate__zoomIn animate__delay-1s">
+          PROJECTS <span class="text-purple-600">DELIVERED</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-600">A Glimpse Into Some of My Recent Works</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-6 max-w-6xl mx-auto">
+        <!-- Project 1 -->
+        <div class="bg-white  shadow-lg overflow-hidden flex-1">
+          <img src="images/ecom.png" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2 text-purple-600">E-commerce Website</h3>
+            <p class="text-gray-600">A modern e-commerce platform with a user-friendly interface and secure payment
+              gateway.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-white  shadow-lg overflow-hidden flex-1">
+          <img src="images/portfolio.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2 text-purple-600">Portfolio Website</h3>
+            <p class="text-gray-600">A sleek portfolio website showcasing creative works and projects.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-white shadow-lg overflow-hidden flex-1">
+          <img src="images/port1.jpg" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2 text-purple-600">Blog Platform</h3>
+            <p class="text-gray-600">A dynamic blog platform with easy content management and social sharing features.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <div id="contact" class="text-center p-6 md:p-12">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4">
+        STAY IN <span class="text-purple-600">CONTACT</span>
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600">Feel free to reach out for collaborations or just a friendly hello!
       </p>
     </div>
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row">
 
-    <!-- Contact Info -->
-    <div class="text-white">
-      <h4 class="text-xl font-bold text-white mb-4">Contact Info</h4>
-      <ul class="space-y-2">
-        <li>📍 Gujranwala, Pakistan</li>
-        <li>📧 example@email.com</li>
-        <li>📞 +92 300 1234567</li>
-      </ul>
-      <!-- Social Icons -->
-      <div class="flex gap-4 mt-4">
-        <a href="#" class="hover:text-purple-400">🌐FACEBOOK</a>
-        <a href="#" class="hover:text-purple-400">💼LINKEDIN</a>
-        <a href="#" class="hover:text-purple-400">📸INSTAGRAM</a>
+        <!-- Left Side -->
+        <div class="flex-1 bg-gradient-to-r from-purple-500 to-purple-700 text-white p-10">
+          <h3 class="text-3xl font-bold mb-4">100% Satisfaction Guaranteed</h3>
+          <p class="mb-6">
+            I'm committed to delivering high-quality work that meets your expectations.
+            Your satisfaction is my top priority, and I strive to exceed it with every project.
+          </p>
+          <h4 class="text-xl font-semibold mb-3">What will be the next step?</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2">
+              ⚪ We’ll prepare the proposal.
+            </li>
+            <li class="flex items-center gap-2">
+              ⚪ We’ll discuss it together.
+            </li>
+            <li class="flex items-center gap-2">
+              ⚪ Let’s start the discussion.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side (Form) -->
+        <div class="flex-1 p-10">
+          <h3 class="text-3xl font-bold text-purple-600 mb-6">Start Your Project</h3>
+          <form class="space-y-4">
+            <div class="flex gap-4">
+              <input type="text" placeholder="First Name"
+                class="w-1/2 border p-3 focus:outline-none focus:ring-2 focus:ring-purple-500">
+              <input type="text" placeholder="Last Name"
+                class="w-1/2 border p-3 focus:outline-none focus:ring-2 focus:ring-purple-500">
+            </div>
+            <input type="email" placeholder="Email Address"
+              class="w-full border p-3 focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <textarea placeholder="Message" rows="5"
+              class="w-full border p-3 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+            <button
+              class="w-full bg-purple-600 hover:bg-transparent hover:border-2 hover:border-purple-500 hover:text-purple-500 text-white font-medium py-3 shadow-md flex items-center justify-center gap-2">
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Bottom -->
-  <div class="text-center text-white mt-10 border-t border-white border-t pt-6">
-    © 2025 MyPortfolio Designed by Hafsah. All Rights Reserved.
-  </div>
-</footer>
+    <!-- FOOTER START -->
+    <footer class="bg-gradient-to-r from-purple-700 to-black bg-cover bg-center relative mt-12 py-12">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between">
+
+        <!-- About -->
+        <div>
+          <h4 class="text-xl font-bold text-white mb-4">MyPortfolio</h4>
+          <p class="text-white">
+            A passionate Web Designer & Developer creating<br> modern, responsive, and user-friendly websites.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="text-white">
+          <h4 class="text-xl font-bold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="portfoliooo.html" class="hover:text-purple-400">Home</a></li>
+            <li><a href="#about" class="hover:text-purple-400">About</a></li>
+            <li><a href="#services" class="hover:text-purple-400">Services</a></li>
+            <li><a href="#contact" class="hover:text-purple-400">Contact</a></li>
+          </ul>
+        </div>
+
+
+        <!-- Contact Info -->
+        <div class="text-white">
+          <h4 class="text-xl font-bold text-white mb-4">Contact Info</h4>
+          <ul class="space-y-2">
+            <li>📍 Gujranwala, Pakistan</li>
+            <li>📧 example@email.com</li>
+            <li>📞 +92 300 1234567</li>
+          </ul>
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-4">
+            <a href="#" class="hover:text-purple-400">🌐FACEBOOK</a>
+            <a href="#" class="hover:text-purple-400">💼LINKEDIN</a>
+            <a href="#" class="hover:text-purple-400">📸INSTAGRAM</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="text-center text-white mt-10 border-t border-white border-t pt-6">
+        © 2025 MyPortfolio Designed by Hafsah. All Rights Reserved.
+      </div>
+    </footer>
 
 
 
   </div>
 </body>
+
 </html>
